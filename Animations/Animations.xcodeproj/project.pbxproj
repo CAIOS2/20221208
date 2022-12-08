@@ -13,6 +13,7 @@
 		A00437AD2942472E00727AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00437AB2942472E00727AFA /* Main.storyboard */; };
 		A00437AF2942472F00727AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00437AE2942472F00727AFA /* Assets.xcassets */; };
 		A00437B22942472F00727AFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00437B02942472F00727AFA /* LaunchScreen.storyboard */; };
+		A00437BA294261F800727AFA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00437B9294261F800727AFA /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A00437AE2942472F00727AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A00437B12942472F00727AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A00437B32942472F00727AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00437B9294261F800727AFA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		A00437992942472E00727AFA = {
 			isa = PBXGroup;
 			children = (
+				A00437B9294261F800727AFA /* SecondViewController.swift */,
 				A00437A42942472E00727AFA /* Animations */,
 				A00437A32942472E00727AFA /* Products */,
 			);
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00437BA294261F800727AFA /* SecondViewController.swift in Sources */,
 				A00437AA2942472E00727AFA /* ViewController.swift in Sources */,
 				A00437A62942472E00727AFA /* AppDelegate.swift in Sources */,
 				A00437A82942472E00727AFA /* SceneDelegate.swift in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NKu-Q2-gWR">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -8,6 +8,51 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="dxQ-i0-Xdd">
+            <objects>
+                <viewController id="NKu-Q2-gWR" customClass="SecondViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h6a-ay-4qh">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUH-ew-ErF">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fA6-WQ-STB"/>
+                                    <constraint firstAttribute="width" constant="100" id="fJ4-Qr-2Sj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pjx-BT-ji4">
+                                <rect key="frame" x="100" y="0.0" width="290" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ZHQ-10-DIg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zVA-Fr-p6J"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="pjx-BT-ji4" firstAttribute="top" secondItem="h6a-ay-4qh" secondAttribute="top" id="M2C-Oq-Q4a"/>
+                            <constraint firstItem="pjx-BT-ji4" firstAttribute="leading" secondItem="jUH-ew-ErF" secondAttribute="trailing" id="agH-YX-2qc"/>
+                            <constraint firstItem="jUH-ew-ErF" firstAttribute="leading" secondItem="zVA-Fr-p6J" secondAttribute="leading" id="juG-s6-Zy4"/>
+                            <constraint firstItem="jUH-ew-ErF" firstAttribute="top" secondItem="h6a-ay-4qh" secondAttribute="top" id="lOD-bR-GjL"/>
+                            <constraint firstItem="pjx-BT-ji4" firstAttribute="trailing" secondItem="zVA-Fr-p6J" secondAttribute="trailing" id="qNg-bM-gaQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="someView" destination="jUH-ew-ErF" id="2zD-b5-7ZT"/>
+                        <outlet property="someViewLeadingConstraint" destination="juG-s6-Zy4" id="WeD-rb-mte"/>
+                        <outlet property="someViewTopConstraint" destination="lOD-bR-GjL" id="Gev-CN-3X5"/>
+                        <outlet property="someViewWidthConstraint" destination="fJ4-Qr-2Sj" id="whj-Ly-Abc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PV8-rt-Lhg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-624" y="7"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -55,6 +100,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
