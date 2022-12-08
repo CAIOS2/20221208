@@ -42,6 +42,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="uSH-Rq-27A" id="Ckf-xT-xFm"/>
+                        <outlet property="slider" destination="8bC-Xf-vdC" id="qoz-Wd-qpM"/>
                         <outlet property="someView" destination="6tI-LX-ct7" id="xhH-zM-QnH"/>
                     </connections>
                 </viewController>
